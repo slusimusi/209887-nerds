@@ -7,7 +7,7 @@
     <body>
         <header>
             <div>
-                 <img src="img/nerds-logo.svg" alt="Лого">
+                 <a href="index.html"><img src="img/nerds-logo.svg" alt="Лого"></a>
             </div>
             <nav>
                 <ul>
@@ -22,73 +22,111 @@
         </header>
         <main>
             <h1>Магазин готовых шаблонов</h1>
-            <div>
-                <b>Стоимость</b>
-                <p>от <span>0</span> до <span>15000</span></p>
+            <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
+                <label for="pricecount">Стоимость</label>
+                <input type="range" id="pricecount" name="pricecount" min="0" max="15000">
+                <p>от <output name="priceoutput">0</output> до <output name="priceoutput">15000</output></p>
                 <b>Сетка:</b>
-                <ul>
-                    <li>Адаптивная</li>
-                    <li>Фиксированная</li>
-                    <li>Резиновая</li>
-                </ul>
+                <label>
+                    <input type="radio" name="value-1" value="adaptive">
+                    Адаптивная
+                </label>
+                <label>
+                    <input type="radio" name="value-2" value="fixed">
+                    Фиксированная
+                </label>
+                <label>
+                    <input type="radio" name="value-3" value="reflowable">
+                    Резиновая
+                </label>
                 <b>Особенности:</b>
-                <ul>
-                    <li>Слайдер</li>
-                    <li>Блок преимуществ</li>
-                    <li>Новости</li>
-                    <li>Галерея</li>
-                    <li>Корзина</li>
-                </ul>
-                <a href="#">Показать</a>
-            </div>
+                <label>
+                    <input type="checkbox" name="value-4" value="slider">
+                    Слайдер
+                </label>
+                <label>
+                    <input type="checkbox" name="value-5" value="features">
+                     Блок преимуществ
+                </label>
+                <label>
+                    <input type="checkbox" name="value-6" value="news">
+                    Новости
+                </label>
+                <label>
+                    <input type="checkbox" name="value-7" value="gallery">
+                    Галерея
+                </label>
+                <label>
+                    <input type="checkbox" name="value-8" value="bin">
+                    Корзина
+                </label>
+                <input type="submit" value="Показать">
+            </form>
             <div>
                 <b>Сортировать:</b>
                 <ul>
                     <li><a href="#">по цене</a></li>
                     <li><a href="#">по типу</a></li>
                     <li><a href="#">по названию</a></li>
-                    <img src="img/icon-down-dir.svg" alt="Вниз">
-                    <img src="img/icon-up-dir.svg" alt="Вверх">
+                    <a href="#"><img src="img/icon-down-dir.svg" alt="Вниз"></a>
+                    <a href="#"><img src="img/icon-up-dir.svg" alt="Вверх"></a>
                 </ul>
                 <ul>
                     <li>
                         <img src="img/img-sedona.jpg" alt="Sedona">
                         <div>
-                            <b>Sedona</b><p>Информационный сайт для туристов</p><a href="#">9900 руб</a>
+                            <a href="#">Sedona</a>
+                            <p>Информационный сайт для туристов</p>
+                            <a href="#">9900 руб</a>
                         </div>
                     </li>
                     <li>
                         <img src="img/img-pink.jpg" alt="Pink">
                         <div>
-                            <b>Pink</b><p>Продуктовый лендинг приложения для iOS и Android</p><a href="#">9900 руб</a>
+                            <a href="#">Pink</a>
+                            <p>Продуктовый лендинг приложения для iOS и Android</p>
+                            <a href="#">9900 руб</a>
                         </div>
                     </li>    
                     <li>
                         <img src="img/img-barbershop.jpg" alt="Borodinski">
                         <div>
-                            <b>Pink</b><p>Сайт салоны красоты. Для мужчин, да.</p><a href="#">9900 руб</a>
+                            <a href="#">Borodinski</a>
+                            <p>Сайт салоны красоты. Для мужчин, да.</p>
+                            <a href="#">9900 руб</a>
                         </div>
                     </li>    
                     <li>
                         <img src="img/img-mishka.jpg" alt="Mishka">
                         <div>
-                            <b>Pink</b><p>Интернет-магазин вязаных игрушек</p><a href="#">9900 руб</a>
+                            <a href="#">Mishka</a>
+                            <p>Интернет-магазин вязаных игрушек</p>
+                            <a href="#">9900 руб</a>
                         </div>
                     </li>
                     <li>
                         <img src="img/img-aplus.jpg" alt="htmlacademy">
                         <div>
-                            <b>Pink</b><p>Лендинг курсов повышения квалификации</p><a href="#">9900 руб</a>
+                            <a href="#">A Plus</a>
+                            <p>Лендинг курсов повышения квалификации</p>
+                            <a href="#">9900 руб</a>
                         </div>
                     </li>
                     <li>
                         <img src="img/img-kvast.jpg" alt="Кваст">
                         <div>
-                            <b>Pink</b><p>Промо-сайт производителя крафтового кваса</p><a href="#">9900 руб</a>
+                            <a href="#">Кваст</a>
+                            <p>Промо-сайт производителя крафтового кваса</p>
+                            <a href="#">9900 руб</a>
                         </div>
                     </li>
                 </ul>
-                <span>1</span><span>2</span><span>3</span><span>Следующая</span>       
+                <div>
+                    <a href="#1">1</a>
+                    <a href="#2">2</a>
+                    <a href="#3">3</a>
+                    <a href="#next">Следующая</a>
+                </div>
             </div>    
         </main>
         <footer>
@@ -100,13 +138,24 @@
                 <p>тел. +7 (812) 275-75-75</p>
                 <a href="#">Напишите нам</a>
             </div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="name-field">Ваше имя:</label>
+                <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+                <label for="email-field">Ваше имя:</label>
+                <input type="email" name="email" id="email-field" placeholder="email@example.com">
+                <label for="text-field">Текст письма:</label>
+                <br>
+                <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea>
+                <br>
+                <input type="submit" value="Отправить">
+            </form>
             <div>
-                <a href="#">vk.com</a>
                 <img src="img/vk-icon.svg" alt="vk">
-                <a href="#">facebook.com</a>
+                <a href="https://vk.com">vk.com</a>
                 <img src="img/fb-icon.svg" alt="fb">
-                <a href="#">instagram.com</a>
+                <a href="https://facebook.com">facebook.com</a>
                 <img src="img/insta-icon.svg" alt="instagram">
+                <a href="https://instagram.com">instagram.com</a>
             </div>
             <b>Давайте дружить, это выгодно!</b>
             <p>Скидка 10% для друзей из социальных сетей</p>
