@@ -15,7 +15,6 @@
                     <li><a href="#">Клиенты</a></li>
                     <li><a href="#">Магазин</a></li>
                     <li><a href="#">Контакты</a></li>
-                    <img src="img/cart-icon.svg" alt="Корзина">
                     <li><a href="#">Корзина</a></li>
                 </ul>
             </nav>
@@ -28,36 +27,36 @@
                 <p>от <output name="priceoutput">0</output> до <output name="priceoutput">15000</output></p>
                 <b>Сетка:</b>
                 <label>
-                    <input type="radio" name="value-1" value="adaptive">
+                    <input type="radio" name="radiobutton" value="adaptive">
                     Адаптивная
                 </label>
                 <label>
-                    <input type="radio" name="value-2" value="fixed">
+                    <input type="radio" name="radiobutton" value="fixed">
                     Фиксированная
                 </label>
                 <label>
-                    <input type="radio" name="value-3" value="reflowable">
+                    <input type="radio" name="radiobutton" value="reflowable">
                     Резиновая
                 </label>
                 <b>Особенности:</b>
                 <label>
-                    <input type="checkbox" name="value-4" value="slider">
+                    <input type="checkbox" name="check1" value="slider">
                     Слайдер
                 </label>
                 <label>
-                    <input type="checkbox" name="value-5" value="features">
+                    <input type="checkbox" name="check2" value="features">
                      Блок преимуществ
                 </label>
                 <label>
-                    <input type="checkbox" name="value-6" value="news">
+                    <input type="checkbox" name="check3" value="news">
                     Новости
                 </label>
                 <label>
-                    <input type="checkbox" name="value-7" value="gallery">
+                    <input type="checkbox" name="check4" value="gallery">
                     Галерея
                 </label>
                 <label>
-                    <input type="checkbox" name="value-8" value="bin">
+                    <input type="checkbox" name="check5" value="bin">
                     Корзина
                 </label>
                 <input type="submit" value="Показать">
@@ -68,8 +67,8 @@
                     <li><a href="#">по цене</a></li>
                     <li><a href="#">по типу</a></li>
                     <li><a href="#">по названию</a></li>
-                    <a href="#"><img src="img/icon-down-dir.svg" alt="Вниз"></a>
-                    <a href="#"><img src="img/icon-up-dir.svg" alt="Вверх"></a>
+                    <li><a href="#" class="visually-hidden">Вниз</a></li>
+                    <li><a href="#" class="visually-hidden">Вверх</a></li>
                 </ul>
                 <ul>
                     <li>
@@ -150,12 +149,9 @@
                 <input type="submit" value="Отправить">
             </form>
             <div>
-                <img src="img/vk-icon.svg" alt="vk">
-                <a href="https://vk.com">vk.com</a>
-                <img src="img/fb-icon.svg" alt="fb">
-                <a href="https://facebook.com">facebook.com</a>
-                <img src="img/insta-icon.svg" alt="instagram">
-                <a href="https://instagram.com">instagram.com</a>
+                <a href="https://vk.com" class="visually-hidden">vk.com</a>
+                <a href="https://facebook.com" class="visually-hidden">facebook.com</a>
+                <a href="https://instagram.com" class="visually-hidden">instagram.com</a>
             </div>
             <b>Давайте дружить, это выгодно!</b>
             <p>Скидка 10% для друзей из социальных сетей</p>
