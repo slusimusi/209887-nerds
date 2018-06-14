@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: #000000;
+}
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+.main-navigation a {
+    line-height: 30px;
+}
+
+.main-navigation a:hover {
+    color: #fb565a;
+}
+
+.main-navigation a:focus {
+    color: #a6a6a6;
+}
+
+.main-navigation a:active {
+    text-decoration-color: #fb5559;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.slide p {
+    color: #585e62;
+}
+
+.slide b {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.slide a {
+    color: #ffffff;
+    background-color: #fb5559;
+    line-height: 18px;
+}
+
+.slide a:hover {
+    background-color: #e74246;
+}
+
+.slide a:focus {
+    background-color: #d7363a;
+    opacity: 0.3
+}
+
+.services h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.services p {
+    text-transform: none;
+    color: #283136;
+}
+
+.services a {
+    color: #ffffff;
+    line-height: 18px;
+}
+
+.btn1 {
+    background-color: #fb5559;
+}
+
+.btn1:hover {
+    background-color: #e74246;
+}
+
+.btn1:focus {
+    background-color: #d7363a;
+    opacity: 0.8;
+}
+
+.btn2 {
+    background-color: #00c973;
+}
+
+.btn2:hover {
+    background-color: #00bc6b;
+}
+
+.btn2:focus {
+    background-color: #00aa61;
+    opacity: 0.8;
+}
+
+.btn3 {
+    background-color: #efc749;
+}
+
+.btn3:hover {
+    background-color: #eab434;
+}
+
+.btn3:focus {
+    background-color: #e5a722;
+    opacity: 0.8;
+}
+
+.studio {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.about-us p {
+    color: #4f565b;
+    text-transform: none;
+}
+
+.about-us li {
+    text-transform: none;
+    color: #5d6366;
+}
+
+.procents {
+    font-size: 45px;
+    line-height: 10px;
+}
+
+.benefits {
+    line-height: 18px;
+    color: #283136;
+}
+
+.partners a {
+    opacity: 0.2;
+}
+
+.partners a:hover {
+    opacity: 1;
+}
+
+.partners a:focus {
+    opacity: 0.1;
+}
+
+.footer-address b {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.footer-address p {
+    color: #707070;
+    text-transform: none;
+    line-height: 18px;
+}
+
+.footer-address a,
+input[type="submit"] {
+    color: #ffffff;
+    background-color: #fb5559;
+    line-height: 18px;
+}
+
+.main-header a:hover {
+    opacity: 0.8;
+}
+
+.main-header a:focus {
+    opacity: 0.3;
+}
+
+label {
+    text-transform: none;
+    line-height: 18px;
+}
+
+input[type="text"] {
+    border-color: #d7dbdd;
+}
+
+input[type="text"]:hover {
+    border-color: #b3b8bb;
+}
+
+input[type="text"]:focus {
+    border-color: #010101;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid {
+    border-color: #e74145;
+}
+
+.footer-social a {
+    background-color: #e1e1e1;
+}
+
+.footer-social a:hover {
+    background-color: #e74246;
+}
+
+.footer-social a:focus {
+    background-color: #d7363a;
+    opacity: 0.3;
+}
+
+.footer-social b {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: none;
+}
+
+.footer-social p {
+    text-transform: none;
+    line-height: 22px;
+    color: #a1a1a1;
+}
+
+.container-inner label {
+    line-height: 20px;
+    color: #5d6366;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    color: #b7b7b7;
+}
+
+input[type="radio"]:hover,
+.container-inner label:hover,
+input[type="checkbox"]:hover {
+    color: #4d4d4d;
+}
+
+input[type="radio"]:disabled,
+.container-inner label:disabled,
+input[type="checkbox"]:disabled {
+    color: #ececec;
+    opacity: 0.1;
+}
+
+.makets-filtres a {
+    color: #b2b2b2;
+    line-height: 18px;
+}
+
+.makets-filtres a:hover {
+    color: #666666;
+}
+
+.makets-filtres a:focus,
+.makets-filtres a:active {
+    color: #000000;
+}
+
+.container-inner span {
+    line-height: 22px;
+    background-color: #ededed;
+}
+
+.container-inner b {
+    line-height: 30px;
+}
+
+.container-inner input[type="submit"] {
+    background-color: #ededed;
+    line-height: 18px;
+    color: #000000;
+    font: inherit;
+}
+
+.container-inner input[type="submit"]:hover {
+    background-color: #dfdfdf;
+}
+
+.container-inner input[type="submit"]:focus {
+    background-color: #d5d5d5;
+
+}
+
+.container-inner input[value]:focus {
+    opacity: 0.3;
+    color: #949494;
+}
+
+.makets-info {
+    background-color: #eeeeee;
+}
+
+.makets-info p {
+    text-transform: none;
+    color: #666666;
+}
+
+.makets-price {
+    background-color: #fb5559;
+    color: #ffffff;
+}
+
+.makets-price:hover {
+    background-color: #e74246;
+}
+
+.makets-price:focus {
+    background-color: #d7363a;
+}
+
+.makets-title {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.pages a {
+    background-color: #ededed;
+    line-height: 18px;
+}
+
+.pages a:hover {
+    background-color: #dfdfdf;
+}
+
+.pages a:focus {
+    background-color: #d5d5d5;
+    color: #949494;
+}
+
+.pages a:active {
+    background-color: #ffffff;
+    border-color: #dbdbdb;
+}
