@@ -8,6 +8,8 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  background-color: #eeeeee;
+  min-width: 1160px;
 }
 
 li {
@@ -21,7 +23,13 @@ a {
 }
 
 .main-header {
-    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
 }
 
 .main-navigation a {
@@ -41,31 +49,66 @@ a {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
 
-.slide p {
+.slide {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-text p {
     color: #585e62;
+    text-transform: none;
 }
 
-.slide b {
+.slide-text h2 {
     font-size: 55px;
     line-height: 55px;
+    text-transform: none;
 }
 
-.slide a {
+.slide-text a {
     color: #ffffff;
     background-color: #fb5559;
     line-height: 18px;
 }
 
-.slide a:hover {
+.slide-text a:hover {
     background-color: #e74246;
 }
 
-.slide a:focus {
+.slide-text a:focus {
     background-color: #d7363a;
     opacity: 0.3
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.services {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .services h3 {
@@ -122,9 +165,19 @@ a {
     opacity: 0.8;
 }
 
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
 .studio {
     font-size: 45px;
     line-height: 45px;
+    text-transform: none;
+}
+
+.about-us {
+    width: 660px;
 }
 
 .about-us p {
@@ -145,6 +198,12 @@ a {
 .benefits {
     line-height: 18px;
     color: #283136;
+    text-transform: none;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
 }
 
 .partners a {
@@ -157,6 +216,18 @@ a {
 
 .partners a:focus {
     opacity: 0.1;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.footer-address {
+    order: 0;
+    background-color: #ffffff;
+    width: 320px;
 }
 
 .footer-address b {
@@ -177,12 +248,37 @@ input[type="submit"] {
     line-height: 18px;
 }
 
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .main-header a:hover {
     opacity: 0.8;
 }
 
 .main-header a:focus {
     opacity: 0.3;
+}
+
+.form b {
+    text-transform: none;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.form a {
+    opacity: 0.3;
+}
+
+.form a:hover {
+    opacity: 1;
+    color: #fb565a;
+}
+
+.form a:active {
+    opacity: 0.1;
 }
 
 label {
@@ -220,21 +316,48 @@ input[type="email"]:invalid {
     opacity: 0.3;
 }
 
-.footer-social b {
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text b {
     font-size: 36px;
     line-height: 36px;
     text-transform: none;
 }
 
-.footer-social p {
+.footer-text p {
     text-transform: none;
     line-height: 22px;
     color: #a1a1a1;
 }
 
+.container-inner {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.wrapper-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-inner h1 {
+    background-color: #eeeeee;
+    text-align: center;
+}
+
 .container-inner label {
     line-height: 20px;
     color: #5d6366;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
 }
 
 input[type="radio"],
@@ -255,6 +378,11 @@ input[type="checkbox"]:disabled {
     opacity: 0.1;
 }
 
+.makets-filtres {
+    display: flex;
+    flex-direction: row;
+}
+
 .makets-filtres a {
     color: #b2b2b2;
     line-height: 18px;
@@ -267,6 +395,19 @@ input[type="checkbox"]:disabled {
 .makets-filtres a:focus,
 .makets-filtres a:active {
     color: #000000;
+}
+
+.makets {
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+}
+
+.makets-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 1920px;
 }
 
 .container-inner span {
@@ -291,7 +432,6 @@ input[type="checkbox"]:disabled {
 
 .container-inner input[type="submit"]:focus {
     background-color: #d5d5d5;
-
 }
 
 .container-inner input[value]:focus {
@@ -344,3 +484,9 @@ input[type="checkbox"]:disabled {
     background-color: #ffffff;
     border-color: #dbdbdb;
 }
+
+.form {
+    background-color: #ffffff;
+    width: 780px;
+}
+
