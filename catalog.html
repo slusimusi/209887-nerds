@@ -29,67 +29,90 @@
             <h1>Магазин готовых шаблонов</h1>
                 <div class="wrapper-inner">
                     <form action="https://echo.htmlacademy.ru" method="post" class="filter">
-                        <b>Стоимость:</b>
-                        <input type="range" id="pricecount" name="pricecount">
-                        <p>от <span>0</span> до <span>15000</span></p>
-                        <b>Сетка:</b>
-                        <label>
-                            <input type="radio" name="grid-radio" value="adaptive">
-                            Адаптивная
-                        </label>
-                        <label>
-                            <input type="radio" name="grid-radio" value="fixed">
-                            Фиксированная
-                        </label>
-                        <label>
-                            <input type="radio" name="grid-radio" value="reflowable">
-                            Резиновая
-                        </label>
-                        <b>Особенности:</b>
-                        <label>
-                            <input type="checkbox" name="check1" value="slider">
-                            Слайдер
-                        </label>
-                        <label>
-                            <input type="checkbox" name="check2" value="features">
-                            Блок преимуществ
-                        </label>
-                        <label>
-                            <input type="checkbox" name="check3" value="news">
-                            Новости
-                        </label>
-                        <label>
-                            <input type="checkbox" name="check4" value="gallery">
-                            Галерея
-                        </label>
-                        <label>
-                            <input type="checkbox" name="check5" value="bin">
-                            Корзина
-                        </label>
+                         <fieldset class="filter-item">
+                            <legend>Стоимость:</legend>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Сетка:</legend>
+                                <ul>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+                                        <label for="filter-adaptive">Адаптивная</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed">
+                                        <label for="filter-fixed">Фиксированная</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="reflowable" id="filter-reflowable">
+                                        <label for="filter-reflowable">Резиновая</label>
+                                    </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Особенности:</legend>
+                                <ul>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                                        <label for="filter-slider">Слайдер</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
+                                        <label for="filter-features">Особенности</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                                        <label for="filter-news">Новости</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                                        <label for="filter-gallery">Галерея</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bin" id="filter-bin">
+                                        <label for="filter-bin">Корзина</label>
+                                    </li>
+                            </ul>
+                        </fieldset>
                         <input type="submit" value="Показать">
                     </form> 
                 <div class="makets">
-                    <ul class="makets-filtres">
+                    <div class="breadcumbs">
                         <b>Сортировать:</b>
-                        <li><a href="#">по цене</a></li>
-                        <li><a href="#">по типу</a></li>
-                        <li><a href="#">по названию</a></li>
-                        <li><a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                                <path fill="#231F20" d="M5.5 10L0 0h11"/>
-                            </svg>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-                            </svg>
-                            </a>
-                        </li>
-                    </ul>
+                        <ul class="makets-filtres">
+                            <li><a href="#">по цене</a></li>
+                            <li><a href="#">по типу</a></li>
+                            <li><a href="#">по названию</a></li>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                    <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                                </svg>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                    <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>        
                     <ul class="makets-list">
                         <li>
-                            <img src="img/img-sedona.jpg" alt="Sedona">
+                            <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="575">
                             <div class="makets-info">
                                 <a href="#" class="makets-title">Sedona</a>
                                 <p>Информационный сайт для туристов</p>
@@ -97,7 +120,10 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img/img-pink.jpg" alt="Pink">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                                <path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+                            </svg>
+                            <img src="img/img-pink.jpg" alt="Pink" width="360" height="575">
                             <div class="makets-info">
                                 <a href="#" class="makets-title">Pink</a>
                                 <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -105,7 +131,10 @@
                             </div>
                         </li>    
                         <li>
-                            <img src="img/img-barbershop.jpg" alt="Borodinski">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                                <path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+                            </svg>
+                            <img src="img/img-barbershop.jpg" alt="Borodinski" width="360" height="575">
                             <div class="makets-info">
                                 <a href="#" class="makets-title">Borodinski</a>
                                 <p>Сайт салоны красоты. Для мужчин, да.</p>
@@ -113,7 +142,10 @@
                             </div>
                         </li>    
                         <li>
-                            <img src="img/img-mishka.jpg" alt="Mishka">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                                <path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+                            </svg>
+                            <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="575">
                             <div class="makets-info">
                                 <a href="#" class="makets-title">Mishka</a>
                                 <p>Интернет-магазин вязаных игрушек</p>
@@ -121,7 +153,10 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img/img-aplus.jpg" alt="htmlacademy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                                <path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+                            </svg>
+                            <img src="img/img-aplus.jpg" alt="htmlacademy" width="360" height="575">
                             <div class="makets-info">
                                 <a href="#" class="makets-title">A Plus</a>
                                 <p>Лендинг курсов повышения квалификации</p>
@@ -129,7 +164,10 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img/img-kvast.jpg" alt="Кваст">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                                <path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
+                            </svg>
+                            <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="575">
                             <div class="makets-info">
                                 <a href="#" class="makets-title">Кваст</a>
                                 <p>Промо-сайт производителя крафтового кваса</p>
@@ -138,7 +176,7 @@
                         </li>
                     </ul>
                     <div class="pages">
-                        <a href="#1">1</a>
+                        <a href="#1" class="active">1</a>
                         <a href="#2">2</a>
                         <a href="#3">3</a>
                         <a href="#next">Следующая</a>
@@ -148,14 +186,15 @@
         </main>
         <footer class="main-footer">
             <div class="footer-address">
-                <b>NЁRDS DESIGN STUDIO</b>
-                <p>191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8</p>
+                <div class="footer-address-text">
+                    <b>NЁRDS DESIGN STUDIO</b>
+                    <p>191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8</p>
 
-                <p>тел. +7 (812) 275-75-75</p>
-                <a href="#">Напишите нам</a>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a href="#">Напишите нам</a>
+                </div>
             </div>
-            <img src="img/map.png" alt="Как добраться">
             <div class="footer-social">
                 <a href="https://vk.com" class="social-vk">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
@@ -186,8 +225,8 @@
                 </svg>
             </a><br>
             <label for="name-field">Ваше имя:</label>
+            <label for="email-field">Ваш email:</label><br>
             <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-            <label for="email-field">Ваш email:</label>
             <input type="email" name="email" id="email-field" placeholder="email@example.com">
             <br>
             <label for="text-field">Текст письма:</label>
