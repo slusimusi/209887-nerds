@@ -37,7 +37,7 @@ a {
 
 .main-navigation {
     flex-direction: row;
-    margin-left: 5px;
+    margin-left: 7px;
     display: flex;
 }
 
@@ -64,11 +64,13 @@ a {
 }
 
 .site-navigation li:nth-child(3) {
-    margin-left: 49px;
+    margin-left: 46px;
+    margin-top: 1px;
 }
 
 .site-navigation li:nth-child(4) {
-    margin-left: 47px;
+    margin-left: 45px;
+    margin-top: 1px;
 }
 
 .bin-navigation {
@@ -82,7 +84,8 @@ a {
 
 .bin-navigation .bin {
     position: relative;
-    padding-left: 60px;
+    padding-left: 62px;
+    padding-top: 1px;
 }
 
 .bin::before {
@@ -90,8 +93,8 @@ a {
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 2px;
-    left: 20px;
+    top: 3px;
+    left: 22px;
     background-image: url('../img/cart-icon.svg');
     background-color: #eeeeee;
     background-repeat: no-repeat;
@@ -130,8 +133,8 @@ a {
 
 .slider-controls {
     position: absolute;
-    left: 50%;
-    bottom: 101px;
+    right: 545px;
+    bottom: 105px;
     z-index: 100;
   
     width: 160px;
@@ -179,7 +182,7 @@ a {
 
 .slider-item {
     display: none;
-    padding: 73px 30px 80px 28px;
+    padding: 72px 30px 80px 28px;
 }
 
 .slider-item:nth-child(1) {
@@ -234,7 +237,7 @@ a {
 .slider-item h3 {
     max-width: 600px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   
     font-size: 55px;
     line-height: 55px;
@@ -245,7 +248,7 @@ a {
 .slider-item p {
     max-width: 430px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 39px;
     color: #283136;
     text-transform: none;
     font-weight: 400;
@@ -254,7 +257,7 @@ a {
 .button {
     display: block;
     width: 240px;
-    padding: 15px 0;
+    padding: 16px 0;
   
     font-size: 16px;
     line-height: 18px;
@@ -292,13 +295,12 @@ a {
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
 }
 
 .services-wrapper {
     flex-direction: row;
     border-bottom: 2px solid #eeeeee;
-    margin-left: 5px;
+    margin-left: 7px;
     display: flex;
 }
 
@@ -306,7 +308,7 @@ a {
     width: 300px;
     flex-direction: column;
     margin-right: 100px;
-    margin-top: 80px;
+    margin-top: 79px;
     margin-bottom: 80px;
     display: flex;
 }
@@ -325,7 +327,7 @@ a {
     margin: 0;
     display: block;
     margin-top: 17px;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
     width: 250px;
 }
 
@@ -398,7 +400,6 @@ a {
     width: 769px;
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 15px;
     font-weight: 500;
     text-transform: none;
     letter-spacing: 1;
@@ -406,8 +407,8 @@ a {
 
 .about-us {
     width: 660px;
-    margin-top: 75px;
-    margin-bottom: 57px;
+    margin-top: 70px;
+    margin-bottom: 35px;
     margin-left: 15px;
 }
 
@@ -415,7 +416,7 @@ a {
     color: #4f565b;
     text-transform: none;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 40px;
     display: block;
     width: 660px;
@@ -429,7 +430,7 @@ a {
 .about-us li {
     text-transform: none;
     color: #5d6366;
-    margin-bottom: 23px;
+    padding-bottom: 23px;
     font-weight: 400;
     position: relative;
 }
@@ -453,7 +454,7 @@ a {
 }
 
 .features img {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 140px;
 }
 
@@ -469,9 +470,10 @@ a {
 
 .features-table {
     margin-left: 140px;
+    margin-bottom: 20px;
 }
 
-.features-table td {
+.procents td {
     width: 100px;
     padding-bottom: 35px;
     padding-right: 15px;
@@ -538,12 +540,13 @@ a {
 }
 
 .partners li:nth-child(3) {
-    padding-left: 45px;
+    padding-left: 46px;
     padding-bottom: 15px;
 }
 
 .partners li:nth-child(4) {
-    padding-left: 50px;
+    padding-left: 53px;
+    padding-bottom: 6px;
 }
 
 .partners li:first-child::after {
@@ -572,7 +575,7 @@ a {
     height: 50px;
     position: absolute;
     right: 10px;
-    top: 5px;
+    top: 4px;
     background-color: #eeeeee;
 }
 
@@ -613,10 +616,10 @@ a {
     width: 220px;
     position: relative;
     left: 10%;
-    top: 12%;
-    padding-left: 47px;
+    top: 13%;
+    padding-left: 49px;
     padding-right: 50px;
-    padding-bottom: 45px;
+    padding-bottom: 46px;
     padding-top: 50px;
     display: block;
 }
@@ -624,7 +627,7 @@ a {
 .footer-address-text b {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     font-weight: 500;
     display: block;
 }
@@ -633,17 +636,18 @@ a {
     color: #707070;
     text-transform: none;
     line-height: 18px;
+    padding-left: 1px;
 }
 
 .footer-address-text .telephone {
-    margin-top: 0;
+    padding-top: 3px;
 }
 
 .footer-address-text a {
     padding: 13px 0;
     display: block;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 36px;
 }
 
 .footer-address-text a,
@@ -667,10 +671,10 @@ a {
     padding-right: 100px;
     background-color: #ffffff;
     position: fixed;
-    top: 0;
+    top: 5%;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 15%;
     z-index: 99999;   
     box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
     display: none;
@@ -792,9 +796,9 @@ input[type="email"]:invalid {
 .footer-social a {
     background-color: #e1e1e1;
     border-radius: 50%;
-    width: 80px;
-	height: 80px;
-    margin-right: 10px;
+    width: 78px;
+	height: 78px;
+    margin-right: 12px;
 }
 
 .social-vk svg {
@@ -806,13 +810,13 @@ input[type="email"]:invalid {
 .social-fb svg {
     position: relative;
     top: 35%;
-    left: 41%;
+    left: 43%;
 }
 
 .social-insta svg {
     position: relative;
-    top: 36%;
-    left: 36%;
+    top: 37%;
+    left: 37%;
 }
 
 .footer-social a:hover,
@@ -1389,7 +1393,7 @@ input[type="checkbox"]:active ~ label::before {
 
 .pages a:last-child {
     width: 105px;
-    padding: 15px 79px;
+    padding: 15px 80px;
 }
 
 .pages a:hover,
