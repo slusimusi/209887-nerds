@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 1200px;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -25,10 +24,9 @@ a {
 }
 
 .container-header {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
 }
 
 .logo {
@@ -37,8 +35,9 @@ a {
 
 .main-navigation {
     flex-direction: row;
-    margin-left: 7px;
     display: flex;
+    justify-content: space-between;
+    margin-left: 7px;
 }
 
 .site-navigation {
@@ -133,7 +132,7 @@ a {
 
 .slider-controls {
     position: absolute;
-    right: 545px;
+    left: 50.5%;
     bottom: 105px;
     z-index: 100;
   
@@ -176,20 +175,20 @@ a {
 .slider-list {
     margin: 0;
     padding: 0;
-  
+    margin-left: 7px;
     list-style: none;
 }
 
 .slider-item {
     display: none;
-    padding: 72px 30px 80px 28px;
+    padding: 71px 0 79px 0;
 }
 
 .slider-item:nth-child(1) {
     background-image: url('../img/telephones.png');
     background-color: #eeeeee;
     background-repeat: no-repeat;
-    background-position: 91% 11px;
+    background-position: 95% 11px;
 }
 
 .slider-item:nth-child(2) {
@@ -285,14 +284,13 @@ a {
 
 .container {
     background-color: #ffffff;
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
 }
 
 .container-slide {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -300,8 +298,9 @@ a {
 .services-wrapper {
     flex-direction: row;
     border-bottom: 2px solid #eeeeee;
-    margin-left: 7px;
     display: flex;
+    box-sizing: border-box;
+    margin-left: 7px;
 }
 
 .services {
@@ -504,7 +503,7 @@ a {
 }
 
 .container-partners {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -514,7 +513,7 @@ a {
 .partners {
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
     margin: 0px -20px;
     padding-top: 45px;
@@ -535,17 +534,17 @@ a {
 }
 
 .partners li:nth-child(2) {
-    padding-left: 35px;
+    padding-left: 45px;
     padding-bottom: 10px;
 }
 
 .partners li:nth-child(3) {
-    padding-left: 46px;
-    padding-bottom: 15px;
+    padding-left: 65px;
+    padding-bottom: 12px;
 }
 
 .partners li:nth-child(4) {
-    padding-left: 53px;
+    padding-left: 80px;
     padding-bottom: 6px;
 }
 
@@ -554,8 +553,8 @@ a {
     width: 2px;
     height: 50px;
     position: absolute;
-    right: 10px;
-    top: 5px;
+    right: 2px;
+    top: 2px;
     background-color: #eeeeee;
 }
 
@@ -564,7 +563,7 @@ a {
     width: 2px;
     height: 50px;
     position: absolute;
-    right: 10px;
+    right: -10px;
     top: 20px;
     background-color: #eeeeee;
 }
@@ -574,8 +573,8 @@ a {
     width: 2px;
     height: 50px;
     position: absolute;
-    right: 10px;
-    top: 4px;
+    right: -17px;
+    top: 2px;
     background-color: #eeeeee;
 }
 
@@ -732,10 +731,12 @@ a {
 .footer-social {
     flex-direction: row;
     justify-content: flex-start;
+    margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 70px;
+    margin-left: 120px;
     width: 1160px;
-    padding: 0 140px;
+    padding: 0 20px;
     display: flex;
 }
 
@@ -878,23 +879,17 @@ input[type="email"]:invalid {
 
 .wrapper-inner {
     flex-direction: row;
-    min-width: 1160px;
-    padding: 0 140px;
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
     display: flex;
 }
 
-.container-title {
-    width: 1160px;
-    margin: 0 auto;
-    padding: 0 140px;
-    background-color: #eeeeee;
-}
-
-.container-title .page-title {
+.page-title {
     margin: 0 auto;
     padding-top: 58px;
     padding-bottom: 106px;
-    padding-left: 27px;
+    padding-left: 45px;
     width: 760px;
     font-size: 55px;
     line-height: 55px;
@@ -939,7 +934,7 @@ input[type="email"]:invalid {
 
 .range-filter {
     width: 260px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .filter-item legend {
@@ -1034,8 +1029,9 @@ input[type="email"]:invalid {
 .filter {
     flex-direction: column;
     width: 260px;
-    margin-top: 60px;
+    margin-top: 55px;
     display: flex;
+    margin-left: 7px;
 }
 
 .filter .filter-feature {
@@ -1227,11 +1223,11 @@ input[type="checkbox"]:active ~ label::before {
 .makets-filtres {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
+    margin-top: -2px;
 }
 
 .makets-filtres li {
@@ -1239,19 +1235,19 @@ input[type="checkbox"]:active ~ label::before {
 }
 
 .makets-filtres li:nth-child(2) {
-    margin-left: 27px;
+    margin-left: 24px;
 }
 
 .makets-filtres li:nth-child(3) {
-    margin-left: 28px;
+    margin-left: 22px;
 }
 
 .makets-filtres li:nth-child(4) {
-    margin-left: 45px;
+    margin-left: 50px;
 }
 
 .makets-filtres li:last-child {
-    margin-left: 19px;
+    margin-left: 15px;
 }
 
 .makets-filtres a {
