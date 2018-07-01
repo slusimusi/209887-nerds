@@ -464,7 +464,7 @@ a {
     font-weight: 500;
     text-align: center;
     margin-left: 140px;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     display: block;
 }
 
@@ -475,7 +475,7 @@ a {
 
 .procents td {
     width: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     padding-right: 15px;
     text-transform: none;
 }
@@ -492,7 +492,7 @@ a {
     text-transform: none;
     font-size: 25px;
     display: inline-block;
-    top: -0.6em;
+    top: -0.3em;
     line-height: 1;
 }
 
@@ -734,9 +734,8 @@ a {
     justify-content: flex-start;
     margin-top: 70px;
     margin-bottom: 70px;
-    margin-left: 120px;
-    width: 1200px;
-    padding: 0 20px;
+    width: 1160px;
+    padding: 0 140px;
     display: flex;
 }
 
@@ -879,26 +878,29 @@ input[type="email"]:invalid {
 
 .wrapper-inner {
     flex-direction: row;
-    width: 1200px;
-    padding: 0 20px;
-    margin: 0 auto;
+    min-width: 1160px;
+    padding: 0 140px;
     display: flex;
 }
 
-.page-title {
+.container-title {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 140px;
+    background-color: #eeeeee;
+}
+
+.container-title .page-title {
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 106px;
+    padding-left: 27px;
+    width: 760px;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
     color: #000000;
     text-transform: none;
-    background-color: #eeeeee;
-    padding: 0;
-    margin: 0;
-    padding-top: 57px;
-    padding-bottom: 107px;
-    padding-left: 10px;
-    text-align: center;
-    background-color: #eeeeee;
 }
 
 .container-inner label {
@@ -937,7 +939,7 @@ input[type="email"]:invalid {
 
 .range-filter {
     width: 260px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .filter-item legend {
@@ -1032,9 +1034,8 @@ input[type="email"]:invalid {
 .filter {
     flex-direction: column;
     width: 260px;
-    margin-top: 58px;
+    margin-top: 60px;
     display: flex;
-    margin-left: 27px;
 }
 
 .filter .filter-feature {
@@ -1109,7 +1110,7 @@ input[type="email"]:invalid {
 .filter-input-checkbox + label::before {
     position: absolute;
     content: "";
-    top: -3px;
+    top: -2px;
     left: -36px;
     width: 35px;
     height: 35px;
@@ -1122,7 +1123,7 @@ input[type="email"]:invalid {
 .filter-input-checkbox:checked + label::before {
     position: absolute;
     content: "";
-    top: -3px;
+    top: -2px;
     left: -36px;
     width: 35px;
     height: 35px;
@@ -1218,6 +1219,7 @@ input[type="checkbox"]:active ~ label::before {
     margin: 0;
     padding: 0;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 50px;
     display: flex;
 }
@@ -1225,6 +1227,7 @@ input[type="checkbox"]:active ~ label::before {
 .makets-filtres {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -1240,15 +1243,15 @@ input[type="checkbox"]:active ~ label::before {
 }
 
 .makets-filtres li:nth-child(3) {
-    margin-left: 25px;
+    margin-left: 28px;
 }
 
 .makets-filtres li:nth-child(4) {
-    margin-left: 50px;
+    margin-left: 45px;
 }
 
 .makets-filtres li:last-child {
-    margin-left: 18px;
+    margin-left: 19px;
 }
 
 .makets-filtres a {
@@ -1277,8 +1280,6 @@ input[type="checkbox"]:active ~ label::before {
     font-size: 18px;
     line-height: 18px;
     font-weight: 500;
-    display: block;
-    margin-right: 265px;
 }
 
 .makets-list {
