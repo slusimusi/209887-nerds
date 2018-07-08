@@ -650,6 +650,7 @@ a {
     background-color: #eeeeee;
     background-repeat: no-repeat;
     background-position: 50%;
+    border: 0;
 }
 
 .footer-address-text {
@@ -657,11 +658,11 @@ a {
     width: 220px;
     padding-left: 49px;
     padding-right: 50px;
-    padding-bottom: 46px;
+    padding-bottom: 47px;
     padding-top: 53px;
     display: block;
     position: absolute;
-    top: 50px;
+    top: 48px;
     left: 29px;
 }
 
@@ -1166,7 +1167,7 @@ input[type="email"]:invalid {
 }
 
 .filter .filter-feature {
-    margin-top: 37px;
+    margin-top: 39px;
     margin-bottom: 28px;
 }
 
@@ -1180,7 +1181,7 @@ input[type="email"]:invalid {
     border: none;
     padding: 0;
     margin: 0;
-    margin-top: 55px;
+    margin-top: 53px;
 }
 
 .filter fieldset:first-child {
