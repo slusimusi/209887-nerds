@@ -549,7 +549,7 @@ a {
     -ms-flex-align: center;
     align-items: center;
     margin: 0;
-    padding: 51px 35px 33px 40px;
+    padding: 52px 35px 37px 40px;
     list-style: none;
     border-bottom: 2px solid #eeeeee;
 }
@@ -621,24 +621,26 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .footer-address {
     background-image: url('../img/map.jpg');
     background-color: #eeeeee;
     background-repeat: no-repeat;
-    width: auto;
+    background-position: 0 0;
+    width: 1440px;
     height: 415px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
 }
 
 .footer-address-text {
     background-color: #ffffff;
     width: 220px;
     position: relative;
-    left: 10%;
-    top: 13%;
+    left: 140px;
+    top: 53px;
     padding-left: 49px;
     padding-right: 50px;
     padding-bottom: 46px;
@@ -847,12 +849,12 @@ input[type="email"]:invalid {
 .social-vk svg {
     position: relative;
     top: 39%;
-    left: 33%;
+    left: 34%;
 }
 
 .social-fb svg {
     position: relative;
-    top: 35%;
+    top: 36%;
     left: 43%;
 }
 
@@ -889,22 +891,23 @@ input[type="email"]:invalid {
     display: flex;
 }
 
-.footer-text b {
+.friendship {
     font-size: 36px;
     line-height: 36px;
     text-transform: none;
-    font-weight: bold;
+    font-weight: 700;
     display: block;
     margin-top: 7px;
-    letter-spacing: 0px;
+    margin-bottom: 0;
 }
 
-.footer-text p {
+.discount {
     text-transform: none;
     line-height: 22px;
     color: #444444;
     font-weight: 400;
     display: block;
+    margin: 0;
     margin-top: 10px;
 }
 
