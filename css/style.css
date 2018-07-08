@@ -647,7 +647,6 @@ a {
 .footer-address iframe {
     width: 100%;
     background-image: url('../img/map.jpg');
-    background-color: #eeeeee;
     background-repeat: no-repeat;
     background-position: 50%;
     border: 0;
@@ -1469,7 +1468,7 @@ input[type="checkbox"]:active ~ label::before {
 .maket {
     min-height: 616px;
     width: 360px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
@@ -1554,7 +1553,7 @@ input[type="checkbox"]:active ~ label::before {
 }
 
 .pages {
-    margin-top: 45px;
+    margin-top: 43px;
     margin-bottom: 25px;
 }
 
