@@ -344,9 +344,14 @@ a {
     color: #283136;
     margin: 0;
     display: block;
-    margin-top: 17px;
+    margin-top: 15px;
     margin-bottom: 31px;
     width: 250px;
+}
+
+.services .application {
+    padding-left: 3px;
+    display: block;
 }
 
 .services a {
@@ -431,6 +436,8 @@ a {
     font-weight: 500;
     text-transform: none;
     letter-spacing: 0px;
+    padding-top: 5px;
+    display: block;
 }
 
 .about-us {
@@ -477,7 +484,7 @@ a {
 }
 
 .features {
-    margin-top: 40px;
+    margin-top: 43px;
 }
 
 .features img {
@@ -620,32 +627,42 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
+
 }
 
 .footer-address {
+    position: relative;
+}
+
+.footer-address-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 2;
+}
+
+.footer-address iframe {
+    width: 100%;
     background-image: url('../img/map.jpg');
     background-color: #eeeeee;
     background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 1440px;
-    height: 415px;
-    margin: 0 auto;
+    background-position: 50%;
 }
 
 .footer-address-text {
     background-color: #ffffff;
     width: 220px;
-    position: relative;
-    left: 140px;
-    top: 53px;
     padding-left: 49px;
     padding-right: 50px;
     padding-bottom: 46px;
-    padding-top: 50px;
+    padding-top: 53px;
     display: block;
+    position: absolute;
+    top: 50px;
+    left: 29px;
 }
 
 .footer-address-text b {
@@ -763,6 +780,57 @@ a {
     margin-top: 50px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: block;
+  
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+
 .footer-social {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -772,7 +840,7 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 70px;
 
     width: 1160px;
