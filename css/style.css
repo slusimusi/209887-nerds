@@ -705,6 +705,12 @@ a {
     font-weight: 400;
 }
 
+.map-marker {
+    position: absolute;
+    top: 87px;
+    left: 708px;
+}
+
 .form {
     width: 770px;
     height: 430px;
