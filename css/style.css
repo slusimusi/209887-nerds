@@ -972,7 +972,7 @@ input[type="email"]:invalid {
     text-transform: none;
     font-weight: 700;
     display: block;
-    margin-top: 4px;
+    margin-top: 5px;
     margin-bottom: 0;
 }
 
