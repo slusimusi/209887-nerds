@@ -658,7 +658,7 @@ a {
     padding-left: 49px;
     padding-right: 50px;
     padding-bottom: 47px;
-    padding-top: 52px;
+    padding-top: 53px;
     display: block;
     position: absolute;
     top: 48px;
@@ -847,7 +847,7 @@ a {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 62px;
     margin-bottom: 70px;
 
     width: 1160px;
@@ -960,7 +960,7 @@ input[type="email"]:invalid {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 130px;
+    margin-left: 128px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1554,7 +1554,7 @@ input[type="checkbox"]:active ~ label::before {
 
 .pages {
     margin-top: 43px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .pages a {
